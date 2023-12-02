@@ -39,10 +39,10 @@ jobs:
         run: |
           haxelib --quiet install lime 7.9.0
           haxelib --quiet install openfl 9.1.0
-          haxelib --quiet install flixel
+          haxelib --quiet install flixel 4.11.0
           haxelib --quiet --never run lime setup
           haxelib --quiet install flixel-ui
-          haxelib --quiet install flixel-addons
+          haxelib --quiet install flixel-addons 2.11.0
           haxelib --quiet install hscript
           haxelib --quiet install hxcpp-debug-server
           haxelib --quiet install spinehaxe
@@ -51,6 +51,8 @@ jobs:
           haxelib --quiet git linc_luajit https://github.com/Sirox228/linc_luajit
           haxelib --quiet git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
           haxelib --quiet git hxCodec https://github.com/polybiusproxy/hxcodec
+          haxelib --quiet remove hxcpp
+          haxelib --quiet install hxcpp 4.2.1
 
       - name: Setup Lime
         run: |

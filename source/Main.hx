@@ -4,7 +4,7 @@ import flixel.FlxGame;
 import openfl.display.Sprite;
 #if android
 import android.Permissions;
-import android.Hardware;
+import android.widget.Toast;
 #end
 import haxe.CallStack.StackItem;
 import haxe.CallStack;
@@ -77,7 +77,7 @@ class Main extends Sprite
 			}
 			#if android
 			catch (e:Dynamic)
-			Hardware.toast("Error!\nClouldn't save the crash dump because:\n" + e, ToastType.LENGTH_LONG);
+			Toast.makeText("Error!\nClouldn't save the crash dump because:\n" + e, Toast.LENGTH_LONG);
 			#end
 
 			Sys.println(errMsg);
