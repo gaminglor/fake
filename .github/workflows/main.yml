@@ -45,7 +45,6 @@ jobs:
           haxelib --quiet install flixel-ui
           haxelib --quiet install flixel-addons 2.11.0
           haxelib --quiet install hscript
-          haxelib --quiet install hxcpp-debug-server
           haxelib --quiet install spinehaxe
           haxelib --quiet install away3d
           haxelib --quiet git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools.git
